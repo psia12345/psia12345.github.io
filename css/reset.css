@@ -1,0 +1,21 @@
+li{
+  padding: 0;
+  margin: 0;
+}
+/*.content{
+  margin-top: 50px;
+}*/
+section{
+  border-top: 50px solid transparent;
+  margin-top: -50px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  min-height: 100vh;
+}
+.active{
+  background-color: lightblue;
+}
+body{
+  margin:0;
+}

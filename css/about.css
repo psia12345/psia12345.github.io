@@ -1,0 +1,35 @@
+.name{
+  font-family: 'Satisfy', cursive;
+  font-size: 50px;
+  text-align: left;
+  letter-spacing: 4px;
+  margin: 0px;
+}
+.name-intro{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Reem Kufi', sans-serif;
+  letter-spacing: 4px;
+  margin: 0px; 
+}
+.about-me{
+  display: flex;
+  width:840px;
+  margin: 0 auto;
+}
+.left{
+  width: 420px;
+}
+.right{
+  width: 420px;
+}
+.profile{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: lightblue;
+  margin: 0 auto;
+  background-image: url('./../images/profile.jpg');
+  width: 300px;
+  height: 400px;
+}

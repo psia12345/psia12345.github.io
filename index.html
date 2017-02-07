@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Peik Sia - Software Developer</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <link rel="stylesheet" type="text/css" href="./css/shapes.css">
+    <link rel="stylesheet" type="text/css" href="./css/project.css">
+    <link rel="stylesheet" type="text/css" href="./css/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:400,700|Satisfy" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav>
+        <ul>
+          <a href="#home"><li>Home</li></a>
+          <a href="#projects"><li>Projects</li></a>
+          <a href="#about"><li>About</li></a>
+          <a href="#resume"><li>Resume</li></a>
+          <a href="#contact" class="last"><li>Contact</li></a>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+    </div>
+    <div class="content">
+    <section class="intro" id="home">
+      <p>Hi! I'm <span class="first-name">Peik<span> <span class="last-name">Sia<span>.</p>
+      <p class="intro-body">I'm a full stack developer, who is currently looking for full time opportunity. My passion is to create applications with simple and intuitive user expereince. On my leisure time, I love to do some tinkering of my own.</p>
+      <svg class="arrows">
+        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+      </svg>
+      <p class="bottom-arrow">Scroll down to see my recent projects</p>
+  </section>
+  <section id="projects" class="projects">
+    <h1>Recent Tinkerings</h1>
+    <div class="project-container">
+      <div class="flip-container">
+        <div class="project flipper">
+          <div class="image-container locally front"></div>
+          <div class="description back">
+            <h2>about</h2>
+            <p>Locally is inspired by Eventbrite in order to create an environmentally friendly solution for local garage sales and fundraiser events. The users can post new events, browse events, bookmark and add RSVP to events.</p>
+            <p>Tech Stack: Rails, PostgreSQL, React, Redux, Sass</p>
+          </div>
+        </div>
+        <div class="project-name">
+          <h2>Locally</h2>
+        </div>
+      </div>
+      <div class="flip-container">
+        <div class="project flipper">
+          <div class="image-container racetyping front"></div>
+          <div class="description back">
+            <h2>about</h2>
+            <p>Racetyping is a single or two player typing game. The words are randomly generated in each round. The objective of the game is to type as fast and as accurately as one can until the time runs out. When the game is over, player recives a summary of typing speed (WPM).</p>
+            <p>Tech Stack: HTML5, CSS, JavaScript, Socket.io, Express, Node.js</p>
+          </div>
+        </div>
+        <div class="project-name">
+          <h2>Racetyping</h2>
+        </div>
+      </div>
+      <div class="flip-container">
+        <div class="project flipper">
+          <div class="image-container soon front"></div>
+          <div class="description back">
+            <h2>about</h2>
+            <p>Stay Tune for more exciting future projects</p>
+          </div>
+        </div>
+        <div class="project-name">
+          <h2>Future Project</h2>
+        </div>
+      </div>
+    </div>
+    <svg class="arrows">
+      <path class="a1" d="M0 0 L30 32 L60 0"></path>
+      <path class="a2" d="M0 20 L30 52 L60 20"></path>
+      <path class="a3" d="M0 40 L30 72 L60 40"></path>
+    </svg>
+    <!-- <p class="bottom-arrow">Scroll down to see more about me.</p> -->
+  </section>
+  <section id="about" class="about">
+    <h1>About me</h1>
+    <div class="about-me">
+      <div class="left">
+        <div class="profile"></div>
+      </div>
+      <div class="right">
+        <h1 class="name">My name is</h1>
+        <h2 class="name-intro">Peik Sia</h2>
+        <p>I'm a Full Stack Developer with a passion to create applications using elegant and intuitive user design. I enjoy learning new technology and frameworks to create applications that can solve the problems at hand. I have extensive experience with front-end development (HTML, CSS, jQuery, Javascript, React/Redux) and backend developement (Ruby on Rails).</p>
+        <p>I currently reside in San Francisco Bay Area. I am currently looking for full time opportunity and I am also available for collaborating on projects. Feel free to reach out to me if you have any exciting ideas that you want to discuss.</p>
+        <p><a href="./resume.pdf" target="_blank" download>Download Resume (PDF)</a><a href="./resume.pdf" target="_blank">Open Resume (PDF)</a></p>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="circle main"><h1>Contact</h1></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </section>
+  </div>
+  <script href="./index.js"></script>
+  </body>
+</html>
