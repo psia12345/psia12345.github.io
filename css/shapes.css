@@ -4,7 +4,7 @@
 	position: absolute;
 	left: 50%;
 	margin-left: -30px;
-	bottom: 50px;
+	bottom: 75px;
 }
 
 .arrows path {
@@ -43,14 +43,15 @@
 	animation-delay:0s;
 	-webkit-animation-delay:0s;
 }
+
 .circle {
   background: #fff;
   width: 75px;
   height: 75px;
   border-radius: 50%;
+  margin: 10px;
 }
 .main {
-  background: #fff;
   width: 400px;
   height: 400px;
 }

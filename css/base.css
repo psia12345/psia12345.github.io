@@ -1,7 +1,31 @@
-a, a:visited{
-  color: black;
-  text-decoration: none;
+.content{
+  width: 100vw;
 }
+.bottom-arrow{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+}
+
+#home{
+  background: linear-gradient(0deg, #b4e9fd,rgba(173, 230, 210, 0));
+}
+#projects{
+  background: linear-gradient(0deg, rgba(38, 0, 146, 0.6), rgb(181, 233, 253));
+}
+#about{
+  background: linear-gradient(0deg, rgba(146, 0, 0, 0.34), rgb(125, 102, 190));
+}
+#contact{
+  background: linear-gradient(0deg, rgba(255, 235, 59, 0.35), rgb(218, 168, 168));
+}
+section{
+  min-height: 100vh;
+  width: 100vw;
+}
+
+
 nav ul{
   display: flex;
   margin: 0;
@@ -21,60 +45,15 @@ li{
   list-style: none;
   line-height: 50px;
 }
-a{
-  font-family: 'Reem Kufi', sans-serif;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-left: 1px solid lightblue;
-}
-a:hover{
-  background-color: rgba(173, 216, 230, 0.31);
-  font-weight: bold;
-  font-size: 20px;
-  cursor: pointer;
-}
+
+
 .last{
   padding-right: 20px;
   border-right: 1px solid lightblue;
 }
 
-.bottom-arrow{
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  bottom: 10px;
-}
-.clearfix:after {
-   content: " ";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-}
-h1{
-  font-family: 'Satisfy', cursive;
-  font-size: 60px;
-  text-align: center;
-  margin: 10px;
-}
-p{
-  font-family: 'Roboto', sans-serif;
-}
-h2, a{
-  font-family: 'Reem Kufi', sans-serif;
-}
-.intro{
-  background: linear-gradient(0deg, #b4e9fd,rgba(173, 230, 210, 0));
-}
-#projects{
-  border-color: #bcebfd;
-    background: linear-gradient(0deg, rgba(38, 0, 146, 0.6), rgb(187, 234, 252));
-}
-.about{
-  border-color: #8476c5;
-    background: linear-gradient(0deg, rgba(146, 0, 0, 0.34), rgb(133, 118, 197));
-}
-.contact{
-  border-color: #cfa1ab;
-  background: linear-gradient(0deg, rgba(255, 235, 59, 0.35), rgb(207, 161, 171));
+
+
+.active{
+  background-color: lightblue;
 }

@@ -1,15 +1,27 @@
 .mail{
-
+  position: absolute;
+  margin-top: -220px;
+  border: 2px solid black;
+  margin-left: 272px;
 }
 .github{
-
+  position: absolute;
+  margin-top: -87px;
+  margin-left: 581px;
+  border: 2px solid black
 }
 .linkedIn{
-
-}
-.stackoverflow{
-
+  position: absolute;
+  margin-top: -85px;
+  border: 2px solid black;
+  margin-left: 337px;
 }
 .twitter{
-
+  position: absolute;
+  margin-top: -220px;
+  margin-left: 666px;
+  border: 2px solid black;
+}
+.contact h1{
+  padding-top: 125px;
 }
