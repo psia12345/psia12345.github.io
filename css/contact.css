@@ -1,27 +1,41 @@
 .mail{
   position: absolute;
-  margin-top: -220px;
-  border: 2px solid black;
-  margin-left: 272px;
+  margin-top: 88px;
+  margin-left: 202px;
+  background: url("../images/mail.png") no-repeat center;
+  background-size: 50%;
 }
 .github{
   position: absolute;
-  margin-top: -87px;
-  margin-left: 581px;
-  border: 2px solid black
+  margin-top: -199px;
+  margin-left: 450px;
+  background: url("../images/github.png") no-repeat center;
+  background-size: 50%;
 }
 .linkedIn{
   position: absolute;
-  margin-top: -85px;
-  border: 2px solid black;
-  margin-left: 337px;
+  margin-top: 44px;
+  margin-left: 336px;
+  background: url("../images/linkedin.png") no-repeat center;
+  background-size: 50%;
 }
 .twitter{
   position: absolute;
-  margin-top: -220px;
-  margin-left: 666px;
-  border: 2px solid black;
+  margin-top: -68px;
+  margin-left: 422px;
+  background: url("../images/twitter.png") no-repeat center;
+  background-size: 50%;
 }
 .contact h1{
   padding-top: 125px;
+}
+.container-circle{
+  padding: 50px 0px 200px 0px;
+}
+.contact-link:hover > div{
+  border: 3px solid #e70080;
+  overflow: hidden;
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }

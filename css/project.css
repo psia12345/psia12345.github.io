@@ -47,6 +47,7 @@
   margin: 300px -3px 0px -3px;
   line-height: 3px;
   padding-top: 15px;
+  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.15);
 }
 .project-list:hover .project-container{
   opacity: .25;
@@ -67,6 +68,7 @@
   margin: 10px 15px;
   border: 3px solid #fff;
   margin-bottom: 60px;
+  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.15);
 }
 .front, .back{
   width: 300px;

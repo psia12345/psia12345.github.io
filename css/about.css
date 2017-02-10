@@ -47,17 +47,20 @@
   background-image: url('./../images/profile.jpg');
   width: 300px;
   height: 400px;
+  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.15);
 }
 .button{
 
 }
 .svg-wrapper {
-  height: 60px;
-  margin: 0 auto;
+  height: 50px;
+  margin-top: 30px;
+  margin: 30px 0px 30px -20px;
   position: relative;
   top: 8%;
   transform: translateY(-50%);
-  width: 320px;
+  width: 200px;
+  display: inline-block;
 }
 
 .shape {
@@ -80,24 +83,25 @@
   background-color: white;
   height: 49px;
   z-index: -1;
+  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.15);
 }
 
 @keyframes draw {
   0% {
     stroke-dasharray: 140 540;
     stroke-dashoffset: -474;
-    stroke-width: 8px;
+    stroke-width: 10px;
   }
   100% {
     stroke-dasharray: 760;
     stroke-dashoffset: 0;
-    stroke-width: 2px;
+    stroke-width: 5px;
   }
 }
 
 .svg-wrapper:hover .shape {
   -webkit-animation: 0.5s draw linear forwards;
-  animation: 0.5s draw linear forwards;
+  animation: 0.8s draw linear forwards;
 }
 .resume{
   letter-spacing: 2px;
