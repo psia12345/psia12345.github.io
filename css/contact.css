@@ -33,9 +33,10 @@
   padding: 50px 0px 200px 0px;
 }
 .contact-link:hover > div{
-  border: 3px solid #e70080;
+  border: 3px solid #fff;
   overflow: hidden;
   -moz-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
+  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.15);
 }
