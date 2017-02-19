@@ -1,0 +1,145 @@
+#home{
+  background-image: url(https://images.unsplash.com/photo-1432821596592-e2c18b78144f?dpr=2&fit=crop&fm=jpg&h=960&ixlib=rb-0.3.5&q=50&w=1440);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 430px;
+  height: 100vh;
+}
+.main-container{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  -webkit-transform: translate(-50%, -30%);
+  -ms-transform: translate(-50%, -30%);
+}
+.window-container{
+  width: 500px;
+  height: 300px;
+  background-color: #333;
+  padding: 45px 20px 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  border-radius: 5px 5px 0 0;
+}
+.window-bar{
+  background: #f9f9f3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+.button{
+  display: inline-block;
+  float: left;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.close{
+  background: #fc635d;
+}
+.min{
+  background: #fdbc40;
+}
+.max{
+  background: #34c84a;
+}
+.window-text p{
+  color: #fff;
+  font-family: "Lucida Console", Monaco, monospace;
+  line-height: 1.5;
+  animation: type 4s steps(60, end);
+  width: 30em;
+  white-space:nowrap;
+  overflow:hidden;
+  -webkit-animation: type 4s steps(60, end);
+  animation: type 4s steps(60, end);
+}
+@keyframes type{
+  from { width: 0; }
+}
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+p:nth-child(2){
+  animation: type2 10s steps(60, end);
+  -webkit-animation: type 10s steps(60, end);
+  -webkit-animation-delay: 10s;
+ animation-delay: 10s;
+ -webkit-animation-fill-mode: forwards;
+ animation-fill-mode: forwards;
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+@-webkit-keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+.bottom-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 500px;
+}
+.bottom-buttons a{
+  padding: 0;
+  width: 150px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.15);
+}
+.side-item{
+  background-color: #fff;
+  padding: 15px;
+}
+.side-item p{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
+
+
+
+
+
+.nav-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
