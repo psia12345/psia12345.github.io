@@ -1,5 +1,5 @@
 #home{
-  background-image: url(https://images.unsplash.com/photo-1432821596592-e2c18b78144f?dpr=2&fit=crop&fm=jpg&h=960&ixlib=rb-0.3.5&q=50&w=1440);
+  background-image: url('../images/bkground.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -56,10 +56,11 @@
   line-height: 1.5;
   animation: type 4s steps(60, end);
   width: 30em;
-  white-space:nowrap;
-  overflow:hidden;
-  -webkit-animation: type 4s steps(60, end);
-  animation: type 4s steps(60, end);
+  width: 8ch;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type .5s steps(8, end);
+  animation: type .5s steps(8, end);
 }
 @keyframes type{
   from { width: 0; }
@@ -67,24 +68,42 @@
 @-webkit-keyframes type{
     from { width: 0; }
 }
-p:nth-child(2){
-  animation: type2 10s steps(60, end);
-  -webkit-animation: type 10s steps(60, end);
-  -webkit-animation-delay: 10s;
- animation-delay: 10s;
- -webkit-animation-fill-mode: forwards;
- animation-fill-mode: forwards;
+.window-text p:nth-child(2){
+  width: 30em;
+  width: 35ch;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  animation: type2 1.5s steps(35, end);
+  -webkit-animation: type2 1.5s steps(35, end);
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.window-text p:nth-child(3){
+  width: 30em;
+  width: 34ch;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  animation: type2 1.5s steps(34, end);
+  -webkit-animation: type2 1.5s steps(34, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes type2 {
+  0% { width: 0; } from { opacity: 0; }
+  1% { opacity: 1; } to { opacity: 1; }
+  100% { opacity: 1;}
 }
 
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; }
-}
-@-webkit-keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; }
+@-webkit-keyframes type2 {
+  0% { width: 0; } from { opacity: 0; }
+  1% { opacity: 1; } to { opacity: 1; }
+  100% { opacity: 1;}
 }
 .bottom-buttons{
   display: flex;
@@ -98,9 +117,9 @@ p:nth-child(2){
   text-align: center;
   box-sizing: border-box;
   box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.15);
+  background-color: #fff;
 }
 .side-item{
-  background-color: #fff;
   padding: 15px;
 }
 .side-item p{
