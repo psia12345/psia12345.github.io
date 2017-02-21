@@ -1,14 +1,19 @@
-// const navicon = document.getElementsByClassName('nav-icon')[0];
-// // navicon.addEventListener('click', myFunction())
-// function myFunction(x) {
-//     x.classList.toggle("change");
-//     console.log('clicked');
-// }
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("content").style.marginLeft = "250px";
+}
 
-  //
-  // $(function(){
-  //     $(".element").typed({
-  //       strings: ["First sentence.", "Second sentence."],
-  //       typeSpeed: 0
-  //     });
-  // });
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("content").style.marginLeft = "0";
+}

@@ -5,6 +5,7 @@
   background-position: center;
   min-height: 430px;
   height: 100vh;
+  z-index: -99;
 }
 .main-container{
   position: absolute;
@@ -13,6 +14,7 @@
   transform: translate(-50%, -30%);
   -webkit-transform: translate(-50%, -30%);
   -ms-transform: translate(-50%, -30%);
+  z-index: 1;
 }
 .window-container{
   width: 500px;
@@ -127,38 +129,60 @@
   line-height: 30px;
 }
 
-
-
-
-
-
-
-.nav-icon {
-    display: inline-block;
-    cursor: pointer;
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.4);
+  position: fixed;
+  z-index: 99;
 }
 
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+/* Float the list items side by side */
+/*ul.topnav li {
+  float: left;
+}*/
+
+/* Style the links inside the list items */
+ul.topnav li a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
-/* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+  background-color: #555;
 }
 
-/* Fade out the second bar */
-.change .bar2 {
-    opacity: 0;
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+/*ul.topnav li.icon {
+  display: none;
+}*/
+
+ul.topnav li {
+  display: none;
+}
+ul.topnav li.icon {
+  float: right;
+  display: inline-block;
 }
 
-/* Rotate last bar */
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+/*ul.topnav.responsive {position: relative;}*/
+ul.topnav.responsive li.icon {
+  right: 0;
+  top: 0;
+}
+ul.topnav.responsive li {
+  float: none;
+  display: inline;
+}
+ul.topnav.responsive li a {
+  display: block;
+  text-align: left;
 }
