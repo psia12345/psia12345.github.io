@@ -24,6 +24,11 @@
   max-width: 1008px;
   min-width: 300px;
 }
+.project-container a{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
 /*.description{
   min-width: 300px;
   width: 45%;
